@@ -1,86 +1,56 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Page Title</title>
+        <title>Rock Paper Scissors</title>
+        <div class="titleDiv">
+            <h1 id="title">Rock Paper Scissors</h1>
+            <h2>First to 5 points wins!</h2>
+        </div>
+
+        <link rel="stylesheet" href="styles.css">
+      
         <meta charset="UTF-8"/>
 
     </head>
     <body>
-        <script>
 
-            let playerPoints = 0;
-            let computerPoints = 0;
+        <main>
+            <div class="resultsTab">
+                <p class="resultText" id="resultText">Select a choice to start</p>
+            </div>
 
-            function computerPlay() {
-                let computerChoice = Math.floor(Math.random() * 3) + 1;
-                switch(computerChoice) {
-                    case 1:
-                        return "Rock";
-                        break;
-                    case 2:
-                        return "Paper";
-                        break;
-                    case 3: 
-                        return "Scissors";
-                        break;
-                }
-            }
+            <div class="scoreTab">
+                <div class="scoreLabels">
+                    <p class="playerScoreLabel" id="playerScoreLabel">Player Score</p>
+                    <span class="labelDivider"></span>
+                    <p class="computerScoreLabel" id="computerScoreLabel">Computer Score</p>
+                </div>
+                <div class="scoreContainers" id="scoreContainers">
+                    <div class="playerScoreContainer" id="playerScoreContainer">
+                        <p class="playerScoreText" id="playerScoreText">0</p>
+                    </div>
+                    <span class=containerDivider></span>
+                    <div class="computerScoreContainer" id="computerScoreContainer">
+                        <p class="computerScoreText" id="computerScoreText">0</p>
+                        </p>
+                    </div>
+                    
+                </div>
+            </div>
 
-            function playRound(playerSelection, computerSelection) {
-                let playerChoice = playerSelection.toLowerCase();
-                let computerChoice = computerSelection.toLowerCase();
-                if (playerChoice == "rock") {
-                    if (computerChoice == "rock") {
-                        return "It's a tie! Both chose Rock";
-                    } else if (computerChoice == "paper") {
-                        computerPoints++;
-                        return "You lose! Paper beats Rock";
-                    } else if (computerSelection == "scissors") {
-                        playerPoints++;
-                        return "You win! Rock beats Scissors";
-                    }
-                } else if (playerChoice == "paper") {
-                    if (computerChoice == "rock") {
-                        playerPoints++;
-                        return "You win! Paper beats Rock";
-                    } else if (computerChoice == "paper") {
-                        return "It's a tie! Both chose paper";
-                    } else if (computerChoice == "scissors") {
-                        computerPoints++;
-                        return "You lose! Scissors beats paper";
-                    }
-                } else if (playerChoice == "scissors") {
-                    if (computerChoice == "rock") {
-                        computerPoints++;
-                        return "You lose! Scissors beats Rock";
-                    } else if (computerChoice == "paper") {
-                        playerPoints++;
-                        return "You win! Scissors beats paper";
-                    } else if (computerChoice == "scissors") {
-                        return "It's a tie! Both chose paper";
-                    }
-                } else {
-                    return "Whoops! Something went wrong!";
-                }
-            }
+                <div class="playerTab">
+                    <div class="playerButtons">
+                        <a href="#" class="playerRock" id="rock" >Rock </a>
+                        <a href="#" class="playerPaper" id="paper">Paper</a>
+                        <a href="#" class="playerScissors" id="scissors">Scissors</a>
+                    </div>
+                </div>
+               
+            
+            <a href="#" class="tryAgainButton">Try Again</a>
 
-            function game() {
-                while (playerPoints < 5 && computerPoints < 5) {
-                    console.log(`Your points: ${playerPoints}. Computer points: ${computerPoints}.`);
-                    let playerInput = prompt("Enter Rock, Paper, or Scissors.");
-                    let computerChoice = computerPlay();
-                    console.log(playRound(playerInput, computerChoice)); 
-                }
-                if (playerPoints == 5) {
-                    console.log("Congrats! You won!");
-                } else {
-                    console.log("Oof! You lost!");
-                }
-            }
+        </main>
 
-            game();
-
-     
-        </script>
+        <script src="game.js"></script>
     </body>
 </html>

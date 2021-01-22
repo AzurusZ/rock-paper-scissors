@@ -1,0 +1,95 @@
+.titleDiv {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.resultsTab {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    width: 50%;
+    margin: 50px 0px 50px 25%;
+
+}
+
+.scoreTab {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    width: 60%;
+    margin: 0px 0px 50px 20%;
+}
+
+.scoreLabels {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: space-between;
+}
+
+.labelDivider {
+    width: 310px;
+}
+
+.scoreContainers {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: space-between;
+    margin-bottom: 30px;
+}
+
+.containerDivider {
+    width: 320px;
+}
+
+.playerScoreContainer {
+    border: 1px solid black;
+    padding: 0px 50px;
+}
+
+.computerScoreContainer {
+    border: 1px solid black;
+    padding: 0px 50px;
+}
+
+.playerTab {
+    position: absolute;
+    left: 20%;
+    display: flex;
+    border: 1px solid black;
+    padding: 100px;
+    width: 50%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.playerTab a {
+    width: 50px;
+    height: 50px;
+    margin: 0 70px;
+    padding: 20px 40px;;
+    border: 1px solid black;
+}
+
+
+
+.tryAgainButton {
+    position: absolute;
+    left: 47.5%;
+    bottom: 7.5%;
+    padding: 5px 10px;
+    border: 1px solid black;
+}
+
+
+
+a {
+    text-decoration: none;
+}
