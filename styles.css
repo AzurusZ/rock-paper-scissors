@@ -1,3 +1,19 @@
+html {
+    background-color: #19B3B1;
+    overflow-y: scroll;
+}
+
+.mainTabs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#titleHeading {
+    color: #D1DDDB;
+}
+
+
 .titleDiv {
     position: relative;
     display: flex;
@@ -10,10 +26,15 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid black;
-    width: 50%;
-    margin: 50px 0px 50px 25%;
+    border: 2px solid black;
+    min-width: 50%;
+    background-color: #1D6A96;
+    margin-top: 35px;
+}
 
+
+.resultText {
+    color: #D1DDDB;
 }
 
 .scoreTab {
@@ -21,9 +42,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid black;
-    width: 60%;
-    margin: 0px 0px 50px 20%;
+    border: 2.5px solid black;
+    min-width: 40%;
+    background-color: #BC5F6A;
+    margin-top: 35px;
 }
 
 .scoreLabels {
@@ -34,7 +56,15 @@
 }
 
 .labelDivider {
-    width: 310px;
+    width: 180px;
+}
+
+.playerScoreLabel {
+    margin-left: 20px;
+}
+
+.computerScoreLabel {
+    margin-right: 10px;
 }
 
 .scoreContainers {
@@ -46,49 +76,74 @@
 }
 
 .containerDivider {
-    width: 320px;
+    width: 190px;
 }
 
 .playerScoreContainer {
-    border: 1px solid black;
+    border: 2px solid black;
     padding: 0px 50px;
 }
 
 .computerScoreContainer {
-    border: 1px solid black;
+    border: 2px solid black;
     padding: 0px 50px;
 }
 
 .playerTab {
-    position: absolute;
-    left: 20%;
+    position: relative;
     display: flex;
-    border: 1px solid black;
+    border: 2px solid black;
     padding: 100px;
-    width: 50%;
+    min-width: 40%;
     flex-direction: column;
     align-items: center;
+    background-color: #14B09B;
+    margin-top: 35px;
+}
+
+.playerButtons {
+    position: relative;
+    display: flex;
+    flex-direction: row;
 }
 
 .playerTab a {
     width: 50px;
-    height: 50px;
+    height: 25px;
     margin: 0 70px;
-    padding: 20px 40px;;
+    padding: 20px 35px;
     border: 1px solid black;
+    background-color: #F2DD66;
+    align-items: center;
 }
 
+.playerTab a:hover {
+    border: 3px solid black;
+}
 
+#scissors {
+    padding-right: 50px;
+}
+
+#rock {
+    padding-left: 40px;
+}
+
+.resetTab {
+    position: relative;
+    display: flex;
+    margin-top: 40px;
+}
 
 .tryAgainButton {
-    position: absolute;
-    left: 47.5%;
-    bottom: 7.5%;
     padding: 5px 10px;
-    border: 1px solid black;
+    border: 2px solid black;
+    background-color: #D1DDDB;
 }
 
-
+.tryAgainButton:hover {
+    border: 3px solid black;
+}
 
 a {
     text-decoration: none;

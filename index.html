@@ -3,8 +3,8 @@
     <head>
         <title>Rock Paper Scissors</title>
         <div class="titleDiv">
-            <h1 id="title">Rock Paper Scissors</h1>
-            <h2>First to 5 points wins!</h2>
+            <h1 id="titleHeading">Rock Paper Scissors</h1>
+            <h2 id="titleHeading">First to 5 points wins!</h2>
         </div>
 
         <link rel="stylesheet" href="styles.css">
@@ -15,28 +15,29 @@
     <body>
 
         <main>
-            <div class="resultsTab">
-                <p class="resultText" id="resultText">Select a choice to start</p>
-            </div>
+            <div class="mainTabs">
+                <div class="resultsTab">
+                    <p class="resultText" id="resultText">Select a choice to start</p>
+                </div>
 
-            <div class="scoreTab">
-                <div class="scoreLabels">
-                    <p class="playerScoreLabel" id="playerScoreLabel">Player Score</p>
-                    <span class="labelDivider"></span>
-                    <p class="computerScoreLabel" id="computerScoreLabel">Computer Score</p>
-                </div>
-                <div class="scoreContainers" id="scoreContainers">
-                    <div class="playerScoreContainer" id="playerScoreContainer">
-                        <p class="playerScoreText" id="playerScoreText">0</p>
+                <div class="scoreTab">
+                    <div class="scoreLabels">
+                        <p class="playerScoreLabel" id="playerScoreLabel">Player Score</p>
+                        <span class="labelDivider"></span>
+                        <p class="computerScoreLabel" id="computerScoreLabel">Computer Score</p>
                     </div>
-                    <span class=containerDivider></span>
-                    <div class="computerScoreContainer" id="computerScoreContainer">
-                        <p class="computerScoreText" id="computerScoreText">0</p>
-                        </p>
+                    <div class="scoreContainers" id="scoreContainers">
+                        <div class="playerScoreContainer" id="playerScoreContainer">
+                            <p class="playerScoreText" id="playerScoreText">0</p>
+                        </div>
+                        <span class=containerDivider></span>
+                        <div class="computerScoreContainer" id="computerScoreContainer">
+                            <p class="computerScoreText" id="computerScoreText">0</p>
+                            </p>
+                        </div>
+                        
                     </div>
-                    
                 </div>
-            </div>
 
                 <div class="playerTab">
                     <div class="playerButtons">
@@ -45,9 +46,12 @@
                         <a href="#" class="playerScissors" id="scissors">Scissors</a>
                     </div>
                 </div>
-               
+                
+                <div class="resetTab">
+                    <a href="#" class="tryAgainButton">Try Again</a>
+                </div>
+            </div>
             
-            <a href="#" class="tryAgainButton">Try Again</a>
 
         </main>
 
