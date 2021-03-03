@@ -14,7 +14,7 @@ let computerPoints = 0;
 function startRound(e) {
     if (isGameOver()) {
         announceWinner();
-        alert("The game has finished. Refresh or presh the Try Again button to restart.");
+        alert("The game has finished. Refresh or press the Try Again button to restart.");
         return;
     }
     let computerInput = computerPlay();
